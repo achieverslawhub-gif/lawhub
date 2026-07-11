@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { Send } from "lucide-react";
+export const dynamic = "force-dynamic";
 
 const LAW_SUBJECTS = [
   "Constitutional Law", "Administrative Law", "Law of Contract", "Law of Tort", "Jurisprudence",

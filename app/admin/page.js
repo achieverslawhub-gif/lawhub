@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { Upload } from "lucide-react";
+export const dynamic = "force-dynamic";
 
 const REQUEST_STATUSES = ["pending", "quoted", "in-progress", "delivered", "paid"];
 const BOOKING_STATUSES = ["pending", "confirmed", "completed", "paid"];
