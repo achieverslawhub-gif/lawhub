@@ -61,6 +61,7 @@ function LoginForm() {
           disabled={loading}
           className="w-full px-6 py-3 rounded-sm text-sm font-ui bg-chambers text-parchment disabled:opacity-50"
         >
+<p className="text-right text-sm font-ui"><Link href="/forgot-password" className="text-chambers underline">Forgot password?</Link></p>
           {loading ? "Signing in…" : "Sign in"}
         </button>
       </form>
