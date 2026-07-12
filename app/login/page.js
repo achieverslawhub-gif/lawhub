@@ -57,14 +57,14 @@ function LoginForm() {
           className="w-full px-4 py-3 rounded-sm border border-parchment2 font-ui text-[15px]"
         />
         {error && <p className="text-sm text-seal font-ui">{error}</p>}
-        <button
+       <button
           disabled={loading}
           className="w-full px-6 py-3 rounded-sm text-sm font-ui bg-chambers text-parchment disabled:opacity-50"
         >
-<p className="text-right text-sm font-ui"><Link href="/forgot-password" className="text-chambers underline">Forgot password?</Link></p>
           {loading ? "Signing in…" : "Sign in"}
         </button>
       </form>
+      <p className="text-right text-sm font-ui mt-3"><Link href="/forgot-password" className="text-chambers underline">Forgot password?</Link></p>
       <p className="text-sm font-ui text-center mt-6 text-sage">
         No account yet? <Link href="/signup" className="text-chambers underline">Create one</Link>
       </p>
