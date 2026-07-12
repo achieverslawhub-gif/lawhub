@@ -47,7 +47,7 @@ export default function JournalPage() {
         {entries.map((e) => (
           <Link
             key={e.id}
-            href={/journal/${e.slug}}
+            href={`/journal/${e.slug}`}
             className="group block p-6 rounded-sm border border-parchment2 hover:border-chambers bg-white transition-colors"
           >
             <div className="flex items-center gap-2 mb-2 text-xs font-mono text-brass">
