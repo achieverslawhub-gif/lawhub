@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { GraduationCap, Feather, BookOpen, ArrowRight, Search, MessageSquareText } from "lucide-react";
+import { GraduationCap, Feather, BookOpen, BookMarked, ArrowRight, Search, MessageSquareText } from "lucide-react";
 
 export default function Home() {
   return (
@@ -82,11 +82,12 @@ export default function Home() {
       <section className="border-t border-parchment2 bg-parchment2">
         <div className="max-w-6xl mx-auto px-5 py-14">
           <h3 className="text-2xl font-display mb-8">Also on the hub</h3>
-          <div className="grid md:grid-cols-3 gap-8">
+         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { Icon: GraduationCap, title: "Courses", desc: "Structured lessons with a graded quiz and a certificate on completion.", href: "/courses" },
+                { Icon: GraduationCap, title: "Courses", desc: "Structured lessons with a graded quiz and a certificate on completion.", href: "/courses" },
               { Icon: Feather, title: "Articles", desc: "Original writing on aviation law, ODR, court technology, and legal method.", href: "/articles" },
               { Icon: BookOpen, title: "Case Law", desc: "Short, honest explainers of landmark cases.", href: "/case-law" },
+              { Icon: BookMarked, title: "Law Journal", desc: "Peer-reviewed aviation law papers, published from submissions to the hub.", href: "/journal" },
             ].map((f) => (
               <Link key={f.title} href={f.href} className="group">
                 <f.Icon className="text-chambers mb-3" size={26} />
