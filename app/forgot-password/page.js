@@ -1,11 +1,4 @@
-[2:00 pm, 12/07/2026] 🤎ADE M🤎: {[
-              { Icon: GraduationCap, title: "Courses", desc: "Structured lessons with a graded quiz and a certificate on completion.", href: "/courses" },
-              { Icon: Feather, title: "Articles", desc: "Original writing on aviation law, ODR, court technology, and legal method.", href: "/articles" },
-              { Icon: BookOpen, title: "Case Law", desc: "Short, honest explainers of landmark cases.", href: "/case-law" },
-              { Icon: BookMarked, title: "Law Journal", desc: "Peer-reviewed aviation law papers, published from submissions to the hub.", href: "/journal" },
-            ].map((f) => (
-[2:02 pm, 12/07/2026] 🤎ADE M🤎: <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
-[2:10 pm, 12/07/2026] 🤎ADE M🤎: "use client";
+"use client";
 import { useState } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
